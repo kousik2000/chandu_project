@@ -8,6 +8,19 @@ import CardCarousel from '../CardCarousel'
 import ContactSection from '../ContactSection'
 
 const Architecture = () => {
+
+    const visitOurPage=()=>{
+        alert('site under construction');
+    }
+
+    const contactUs=()=>{
+        alert('site under construction'); 
+    }
+
+    const readMore=()=>{
+        alert('chepthe ardham kaada site under maintenance ante code rayaneeyara');
+    }
+
   return (
     <div className="bg-container">
         <Navbar/>
@@ -17,7 +30,7 @@ const Architecture = () => {
         <div className='hero-description animate__animated animate__fadeInLeft'>
             <h1 className='hero-title '><span className='hero-title-span'>D</span>ream.<span className='hero-title-span'>D</span>esign.<span className='hero-title-span'>A</span>ffordability</h1>
                     <p className='description'>Transforming visions into reality, our architectural firm creates stunning spaces without compromising on quality or budget. Experience architectural brilliance at an affordable price.</p>
-                    <button className='button'>Contact Us</button>
+                    <button className='button' onClick={contactUs}>Contact Us</button>
                 </div>
                 <img src="/gif.gif" alt="gif" className='gif animate__animated animate__fadeIn'/>
             </div>
@@ -28,7 +41,7 @@ const Architecture = () => {
         <section className='contractors-section'>
             <h1 className='section2-heading'>Are you Searching for the Contractors ?</h1>
             <p className='section2-description'>You are at the right place, We construct your dream home within your budget, without compromising on quality. Trust our team to deliver exceptional results that exceed your expectations. Experience the perfect fusion of affordability and craftsmanship in your dream home.</p>
-            <button className='button-2'>Visit our page</button>
+            <button className='button-2' onClick={visitOurPage}>Visit our page</button>
         </section> 
         <section className='our-projects-section'>
             <OurProjects/>
@@ -41,7 +54,7 @@ const Architecture = () => {
             <span className="about-span-description-text">
             Our team of skilled architects, designers, and construction professionals work collaboratively to ensure that each project we undertake meets the highest standards of quality and client satisfaction. From the initial concept and design phase to the final construction and handover, we are committed to delivering exceptional results.</span></p>
             
-            <button className='button-2'>Read More &#x279C;</button>
+            <button className='button-2' onClick={readMore}>Read More &#x279C;</button>
         </section>  
         <section className="contact-section">
             <ContactSection/>
