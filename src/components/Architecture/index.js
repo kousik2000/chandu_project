@@ -10,15 +10,15 @@ import ContactSection from '../ContactSection'
 const Architecture = () => {
 
     const visitOurPage=()=>{
-        alert('site under construction');
+        alert('site under construction okato sari');
     }
 
     const contactUs=()=>{
-        alert('site under construction'); 
+        alert('site under construction rendo sari'); 
     }
 
     const readMore=()=>{
-        alert('chepthe ardham kaada site under maintenance ante code rayaneeyara');
+        alert('chepthe ardham kaada site under maintenance ani,  code rayaneeyara nannu');
     }
 
   return (
