@@ -1,0 +1,39 @@
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: linear-gradient(to right, #2B5263, #0F2128);
+  padding: 14px 28px;
+  border-radius: 5px;
+  width:90%;
+  margin:50px;
+  border-radius: 10px;
+  min-height:100px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  background-color: transparent !important;
+  border:none;
+}
+
+.icon{
+  color: white;
+  scale:1.5;
+}
+
+.icon:hover{
+  scale:1.8;
+  color: blue;
+}
+
+.galleryImage{
+  width:30px;
+  position: absolute;
+}
