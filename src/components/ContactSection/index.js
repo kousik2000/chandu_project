@@ -70,21 +70,21 @@ const ContactSection = () => {
         <div className="another-contact-container">
             <p className="contact-label">Direct contact with us</p>
             <div className="contact-icon-container">
-                <a href="tel:8309159912"
+                <a href="tel:7658999781"
             target="_blank"
             className="contact-icon"
             rel="noreferrer">
                     <FiPhoneCall className="icon-contact"/>
-                    <p className="contact-link-text">+91 0000000000</p>
+                    <p className="contact-link-text">+91 7658999781</p>
                 </a>
-                <a href="tel:8309159912"
+                <a href="https://instagram.com/g_designers_developers?igshid=MzRlODBiNWFlZA=="
             target="_blank"
             className="contact-icon"
             rel="noreferrer">
                     <BsInstagram  className="icon-contact"/>
                     <p className="contact-link-text">instagram.com</p>
                 </a>
-                <a href="mailto:kousik.ramachandruni@gmail.com"
+                <a href="mailto:garchitects99@gmail.com"
             target="_blank"
             className="contact-icon"
             rel="noreferrer">

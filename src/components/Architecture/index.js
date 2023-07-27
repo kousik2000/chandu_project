@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './index.css'
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Navbar from '../Navbar'
 import OurProjects from '../OurProjects';
@@ -8,6 +10,10 @@ import CardCarousel from '../CardCarousel'
 import ContactSection from '../ContactSection'
 
 const Architecture = () => {
+
+    useEffect(() => {
+        AOS.init({ once: true,duration: 1000 });
+      }, []);
 
     const visitOurPage=()=>{
         alert('site under construction okato sari');
@@ -39,22 +45,22 @@ const Architecture = () => {
             </div>
         </section>
         <section className='contractors-section'>
-            <h1 className='section2-heading'>Are you Searching for the Contractors ?</h1>
-            <p className='section2-description'>You are at the right place, We construct your dream home within your budget, without compromising on quality. Trust our team to deliver exceptional results that exceed your expectations. Experience the perfect fusion of affordability and craftsmanship in your dream home.</p>
-            <button className='button-2' onClick={visitOurPage}>Visit our page</button>
+            <h1 className='section2-heading' data-aos="fade-right">Are you Searching for the Contractors ?</h1>
+            <p className='section2-description' data-aos="fade-right">You are at the right place, We construct your dream home within your budget, without compromising on quality. Trust our team to deliver exceptional results that exceed your expectations. Experience the perfect fusion of affordability and craftsmanship in your dream home.</p>
+            <button className='button-2' data-aos="fade-right" onClick={visitOurPage}>Visit our page</button>
         </section> 
         <section className='our-projects-section'>
             <OurProjects/>
         </section> 
         <section className='about-section'>
-            <h1 className='section2-heading'>About</h1>
-            <p className='section2-description'>Welcome to our esteemed architecture firm, where we specialize in site layouts, interiors, and comprehensive architecture projects. At our firm, we understand that every client has unique needs and preferences, which is why we strive to provide the best design solutions while also considering cost-effectiveness.
+            <h1 className='section2-heading' data-aos="fade-left">About</h1>
+            <p className='section2-description' data-aos="fade-left">Welcome to our esteemed architecture firm, where we specialize in site layouts, interiors, and comprehensive architecture projects. At our firm, we understand that every client has unique needs and preferences, which is why we strive to provide the best design solutions while also considering cost-effectiveness.
             <br className='about-span-description-text'/>
             <br className='about-span-description-text'/>
             <span className="about-span-description-text">
             Our team of skilled architects, designers, and construction professionals work collaboratively to ensure that each project we undertake meets the highest standards of quality and client satisfaction. From the initial concept and design phase to the final construction and handover, we are committed to delivering exceptional results.</span></p>
             
-            <button className='button-2' onClick={readMore}>Read More &#x279C;</button>
+            <button className='button-2' onClick={readMore} data-aos="fade-left">Read More &#x279C;</button>
         </section>  
         <section className="contact-section">
             <ContactSection/>

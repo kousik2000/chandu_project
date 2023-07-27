@@ -68,7 +68,6 @@
   .nav-list:hover {
     background-color:#133B54;
     color: white;
-    scale: 1.1;
   }
   .nav-link .logo:hover {
     scale: 1.2;
