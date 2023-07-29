@@ -27,9 +27,20 @@ const Architecture = () => {
         alert('chepthe ardham kaada site under maintenance ani,  code rayaneeyara nannu');
     }
 
+    const isPorjectsClicked = () => {
+        document.getElementById("architecture-projects").scrollIntoView();
+    };
+    const isAboutClicked=()=>{
+        document.getElementById("architecture-about").scrollIntoView();
+    }
+    const isContactClicked = () => {
+        document.getElementById("architecture-contact").scrollIntoView();
+    };
+
   return (
     <div className="bg-container">
-        <Navbar/>
+        <Navbar isPorjectsClicked={isPorjectsClicked} isAboutClicked={isAboutClicked} isContactClicked={isContactClicked}/>
+            
         <hr className="line"/>
         <section className="hero-section">
         <div className="hero-description-container ">
@@ -49,10 +60,10 @@ const Architecture = () => {
             <p className='section2-description' data-aos="fade-right">You are at the right place, We construct your dream home within your budget, without compromising on quality. Trust our team to deliver exceptional results that exceed your expectations. Experience the perfect fusion of affordability and craftsmanship in your dream home.</p>
             <button className='button-2' data-aos="fade-right" onClick={visitOurPage}>Visit our page</button>
         </section> 
-        <section className='our-projects-section'>
+        <section className='our-projects-section' id="architecture-projects">
             <OurProjects/>
         </section> 
-        <section className='about-section'>
+        <section className='about-section' id="architecture-about">
             <h1 className='section2-heading' data-aos="fade-left">About</h1>
             <p className='section2-description' data-aos="fade-left">Welcome to our esteemed architecture firm, where we specialize in site layouts, interiors, and comprehensive architecture projects. At our firm, we understand that every client has unique needs and preferences, which is why we strive to provide the best design solutions while also considering cost-effectiveness.
             <br className='about-span-description-text'/>
@@ -62,7 +73,7 @@ const Architecture = () => {
             
             <button className='button-2' onClick={readMore} data-aos="fade-left">Read More &#x279C;</button>
         </section>  
-        <section className="contact-section">
+        <section className="contact-section" id="architecture-contact">
             <ContactSection/>
         </section>
         <footer className="footer-section"></footer>

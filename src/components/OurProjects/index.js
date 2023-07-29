@@ -236,7 +236,6 @@ const OurProjects = (props) => {
     dots:false,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 2000,
     infinite: true,
     focusOnSelect:true,
     focusOnChange:true,

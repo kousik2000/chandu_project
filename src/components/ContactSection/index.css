@@ -36,6 +36,30 @@ input::placeholder {
     color:#51818f; 
   }
 
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#CBDBE4; 
+    border-radius: 15px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .text-area{
     box-sizing: border-box;
     width:500px;
