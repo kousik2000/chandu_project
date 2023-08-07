@@ -234,6 +234,7 @@ const OurProjects = (props) => {
 
   const settings = {
     dots:false,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
     infinite: true,
