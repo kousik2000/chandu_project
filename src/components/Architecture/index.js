@@ -12,7 +12,7 @@ import ContactSection from '../ContactSection'
 const Architecture = () => {
 
     useEffect(() => {
-        AOS.init({ once: true,duration: 1000 });
+        AOS.init({ once: true,duration: 2000 });
       }, []);
 
     const visitOurPage=()=>{
@@ -51,8 +51,8 @@ const Architecture = () => {
                 </div>
                 <img src="/gif.gif" alt="gif" className='gif animate__animated animate__fadeIn'/>
             </div>
-            <div className="card-carousel">
-                <CardCarousel/>
+            <div className="card-carousel" data-aos="fade-up">
+                <CardCarousel />
             </div>
         </section>
         <section className='contractors-section'>
@@ -60,7 +60,7 @@ const Architecture = () => {
             <p className='section2-description' data-aos="fade-right">You are at the right place, We construct your dream home within your budget, without compromising on quality. Trust our team to deliver exceptional results that exceed your expectations. Experience the perfect fusion of affordability and craftsmanship in your dream home.</p>
             <button className='button-2' data-aos="fade-right" onClick={visitOurPage}>Visit our page</button>
         </section> 
-        <section className='our-projects-section' id="architecture-projects">
+        <section className='our-projects-section' id="architecture-projects" data-aos="zoom-in-up">
             <OurProjects/>
         </section> 
         <section className='about-section' id="architecture-about">

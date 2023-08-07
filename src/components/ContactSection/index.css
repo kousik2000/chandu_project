@@ -87,11 +87,39 @@ input::placeholder {
     margin-top: 20px;
     border-radius: 15px;
     position: relative;
-    
+    cursor: pointer;
+    background-color:BLACK;
 }
 
+.click-me {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .click-me::before {
+    content: "Click me to open maps";
+    position: absolute;
+    z-index:3;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .click-me:hover::before {
+    opacity: 1;
+  }
+
 .map-image:hover{
-    scale:1.01;  
+    scale:1.01;
+    opacity: 0.5;
 }
 
 .another-contact-container{

@@ -60,7 +60,7 @@ const ContactSection = () => {
             <div className='map-conainer'>
                 <label htmlFor="google-maps" className="contact-label">Google Maps</label>
                 
-                <div id="google-maps">
+                <div id="google-maps" className='click-me'>
                     <a href="https://goo.gl/maps/rF3oZW8DLiwXiUfY7" target="_blank" rel="noopener noreferrer">
                         <img src="./map.png" alt="map" className="map-image"/>
                     </a>
@@ -89,7 +89,7 @@ const ContactSection = () => {
             className="contact-icon"
             rel="noreferrer">
                     <GoMail  className="icon-contact"/>
-                    <p className="contact-link-text">kousik.ramachandruni@gmail.com</p>
+                    <p className="contact-link-text">garchitects99@gmail.com</p>
                 </a> 
                 </div>
         </div>

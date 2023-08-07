@@ -1,11 +1,27 @@
 import "./index.css";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = (props) => {
+  const location = useLocation();
+
+  const getActiveItemFromPathname = (pathname) => {
+    if (pathname === "/") {
+      return "Architecture";
+    } else if (pathname === "/contractors") {
+      return "Contractors";
+    } else if (pathname === "/gallery") {
+      return "Projects";
+    } else if (pathname === "/not-found") {
+      return "About";
+    } else {
+      return "Contact";
+    }
+  };
+
   const [activeItem, setActiveItem] = useState(
-    localStorage.getItem("activeItem") || "Architecture"
+    localStorage.getItem("activeItem") || getActiveItemFromPathname(location.pathname)
   );
 
   const handleItemClick = (item) => {
@@ -29,7 +45,7 @@ const Navbar = (props) => {
   };
 
   useEffect(() => {
-    localStorage.setItem("activeItem", "Architecture");
+    localStorage.setItem("activeItem", activeItem);
     const handleBeforeUnload = () => {
       localStorage.setItem("activeItem", activeItem);
     };
@@ -41,6 +57,10 @@ const Navbar = (props) => {
       localStorage.setItem("activeItem", "Architecture");
     };
   }, [activeItem]);
+
+  useEffect(() => {
+    setActiveItem(getActiveItemFromPathname(location.pathname));
+  }, [location.pathname]);
 
   return (
     <nav className="navbar">
